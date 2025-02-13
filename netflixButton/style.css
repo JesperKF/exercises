@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "DynaPuff", serif;
+  margin-bottom: 60px;
+  font-size: 50px;
+}
+
+.filler {
+  font-family: "DynaPuff", serif;
+  padding: 20px 40px;
+  font-size: 100px;
+  cursor: pointer;
+  background: linear-gradient(to right, red 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  animation: moveBackground 4s linear forwards;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left bottom;
+  }
+}
